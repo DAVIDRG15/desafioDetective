@@ -77,9 +77,9 @@ button.btn-dark {
     background-color: #febd59
 }
 
-img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+/* img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
     display: none;
-}
+} */
 
 @media (max-width: 768px) {
     .situacion {
@@ -88,12 +88,12 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         font-size: 10px;
     }
 
-    .situacionCol h5{
+    .situacionCol h5 {
         margin-bottom: 0px;
         font-size: 10px;
     }
 
-    .col-md-2{
+    .col-md-2 {
         margin-bottom: -25px;
     }
 
@@ -113,7 +113,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         font-size: 10px;
     }
 
-    img{
+    img {
         width: 50%;
         height: 50%;
         margin: auto;

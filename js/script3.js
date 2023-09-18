@@ -187,7 +187,7 @@ function verificarRespuesta9() {
         if (respuestaUsuario.value === respuestaCorrecta) {
             alert("¡Correcto + 1 Pista!");
             document.getElementById('pregunta9').style.display = 'none';
-            setTimeout(function() {
+            setTimeout(function () {
                 verificarGanador();
             }, 1000)
         } else {
