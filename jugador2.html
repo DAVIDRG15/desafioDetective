@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugador 2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="desafioDetective">
+        <div class="container mt-5 mb-5">
+            <h5>Jugador 2</h5><br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <div class="sospechoso">
+                        <h3>PSICÓLOGO</h3>
+                    </div><br>
+                    <div class="imagen">
+                        <img src="img/psicologo.png" class="img-fluid" alt="PSICÓLOGO">
+                    </div><br>
+                    <div class="interrogar">
+                        <h4>INTERROGAR</h4><br>
+
+                        <button id="boton1" type="button" class="btn btn-success" onclick="mostrarPregunta1()">
+                            <span class="fas fa-star"></span> Fácil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta1" style="display: none;">
+                            <p>¿Qué término se refiere a la tendencia a seguir el comportamiento de la mayoría o del
+                                grupo, incluso si difiere de tus propias creencias?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Obediencia<br>
+                            <input type="radio" name="respuesta" value="b"> b) Conformidad<br>
+                            <input type="radio" name="respuesta" value="c"> c) Norma social<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta1()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton2" type="button" class="btn btn-warning" onclick="mostrarPregunta2()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Medio
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta2" style="display: none;">
+                            <p>¿Qué tipo de memoria se refiere a la capacidad de recordar eventos recientes, como lo que
+                                comiste para el desayuno esta mañana?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Memoria circunstancial<br>
+                            <input type="radio" name="respuesta" value="b"> b) Memoria sensorial<br>
+                            <input type="radio" name="respuesta" value="c"> c) Memoria de trabajo<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta2()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton3" type="button" class="btn btn-danger" onclick="mostrarPregunta3()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Díficil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta3" style="display: none;">
+                            <p>¿Cuál de los siguientes trastornos se caracteriza por la presencia de ataques de pánico
+                                inesperados y recurrentes, acompañados de preocupación constante por futuros ataques?
+                            </p>
+                            <input type="radio" name="respuesta" value="a"> a) Trastorno de estrés postraumático<br>
+                            <input type="radio" name="respuesta" value="b"> b) Trastorno depresivo mayor<br>
+                            <input type="radio" name="respuesta" value="c"> c) Trastorno de pánico<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta3()">Responder</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sospechoso">
+                        <h3>GUARDIA DE SEGURIDAD</h3>
+                    </div><br>
+                    <div class="imagen">
+                        <img src="img/guardia.png" class="img-fluid" alt="GUARDIA DE SEGURIDAD">
+                    </div><br>
+                    <div class="interrogar">
+                        <h4>INTERROGAR</h4><br>
+
+                        <button id="boton4" type="button" class="btn btn-success" onclick="mostrarPregunta4()">
+                            <span class="fas fa-star"></span> Fácil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta4" style="display: none;">
+                            <p>¿Qué rama de la criminalística se encarga del estudio de las armas de fuego, sus municiones y su uso en crímenes?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Balística forense<br>
+                            <input type="radio" name="respuesta" value="b"> b) Serología forense<br>
+                            <input type="radio" name="respuesta" value="c"> c) Toxicología forense<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta4()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton5" type="button" class="btn btn-warning" onclick="mostrarPregunta5()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Medio
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta5" style="display: none;">
+                            <p>¿Cuál es el término que se utiliza para la recolección, preservación y análisis sistemático de evidencia en una escena del crimen?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Interrogatorio<br>
+                            <input type="radio" name="respuesta" value="b"> b) Procesamiento de la escena del crimen<br>
+                            <input type="radio" name="respuesta" value="c"> c) Juicio<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta5()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton6" type="button" class="btn btn-danger" onclick="mostrarPregunta6()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Díficil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta6" style="display: none;">
+                            <p>¿Cuál de los siguientes es un ejemplo de una toxina que a menudo se analiza en casos de envenenamiento?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Insulina<br>
+                            <input type="radio" name="respuesta" value="b"> b) Cafeína<br>
+                            <input type="radio" name="respuesta" value="c"> c) Aspirina<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta6()">Responder</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sospechoso">
+                        <h3>TURISTA</h3>
+                    </div><br>
+                    <div class="imagen">
+                        <img src="img/turista.png" class="img-fluid" alt="TURISTA">
+                    </div><br>
+                    <div class="interrogar">
+                        <h4>INTERROGAR</h4><br>
+
+                        <button id="boton7" type="button" class="btn btn-success" onclick="mostrarPregunta7()">
+                            <span class="fas fa-star"></span> Fácil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta7" style="display: none;">
+                            <p> ¿Cuál de los siguientes monumentos icónicos conocido por ser un ejemplo destacado de la arquitectura mogol, se encuentra en la ciudad de Agra, India?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Coliseo de Roma<br>
+                            <input type="radio" name="respuesta" value="b"> b) Gran Muralla China<br>
+                            <input type="radio" name="respuesta" value="c"> c) Taj Mahal<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta7()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton8" type="button" class="btn btn-warning" onclick="mostrarPregunta8()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Medio
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta8" style="display: none;">
+                            <p>¿Cuál es la capital de Australia?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Melbourne<br>
+                            <input type="radio" name="respuesta" value="b"> b) Sídney<br>
+                            <input type="radio" name="respuesta" value="c"> c) Canberra<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta8()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton9" type="button" class="btn btn-danger" onclick="mostrarPregunta9()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Díficil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta9" style="display: none;">
+                            <p>¿Qué país europeo, conocido por su neutralidad en conflictos internacionales, no ha estado involucrado en una guerra desde 1815?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Suecia<br>
+                            <input type="radio" name="respuesta" value="b"> b) Suiza<br>
+                            <input type="radio" name="respuesta" value="c"> c) Noruega<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta9()">Responder</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/script2.js"></script>
+</body>
+
+</html>

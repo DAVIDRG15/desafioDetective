@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugador 1</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="desafioDetective">
+        <div class="container mt-5 mb-5">
+            <h5>Jugador 1</h5><br>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <div class="sospechoso">
+                        <h3>PSICÓLOGO</h3>
+                    </div><br>
+                    <div class="imagen">
+                        <img src="img/psicologo.png" class="img-fluid" alt="PSICÓLOGO">
+                    </div><br>
+                    <div class="interrogar">
+                        <h4>INTERROGAR</h4><br>
+
+                        <button id="boton1" type="button" class="btn btn-success" onclick="mostrarPregunta1()">
+                            <span class="fas fa-star"></span> Fácil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta1" style="display: none;">
+                            <p>¿Cuál de los siguientes trastornos se caracteriza por episodios recurrentes de depresión
+                                mayor y episodios de manía o hipomanía?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Trastorno de ansiedad generalizada<br>
+                            <input type="radio" name="respuesta" value="b"> b) Trastorno bipolar<br>
+                            <input type="radio" name="respuesta" value="c"> c) Trastorno de estrés postraumático<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta1()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton2" type="button" class="btn btn-warning" onclick="mostrarPregunta2()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Medio
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta2" style="display: none;">
+                            <p>¿Qué proceso implica la adquisición de habilidades a través de la observación y la
+                                imitación?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Aprendizaje operante<br>
+                            <input type="radio" name="respuesta" value="b"> b) Aprendizaje condicionado<br>
+                            <input type="radio" name="respuesta" value="c"> c) Aprendizaje social<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta2()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton3" type="button" class="btn btn-danger" onclick="mostrarPregunta3()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Díficil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta3" style="display: none;">
+                            <p>¿Cuál de las siguientes afirmaciones sobre Sigmund Freud es correcta?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Fundó el psicoanálisis<br>
+                            <input type="radio" name="respuesta" value="b"> b) Desarrolló la teoría del conductismo<br>
+                            <input type="radio" name="respuesta" value="c"> c) Fue un pionero en la terapia de
+                            exposición<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta3()">Responder</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sospechoso">
+                        <h3>GUARDIA DE SEGURIDAD</h3>
+                    </div><br>
+                    <div class="imagen">
+                        <img src="img/guardia.png" class="img-fluid" alt="GUARDIA DE SEGURIDAD">
+                    </div><br>
+                    <div class="interrogar">
+                        <h4>INTERROGAR</h4><br>
+
+                        <button id="boton4" type="button" class="btn btn-success" onclick="mostrarPregunta4()">
+                            <span class="fas fa-star"></span> Fácil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta4" style="display: none;">
+                            <p>¿Cuál de las siguientes evidencias forenses se utiliza comúnmente para identificar a una
+                                persona a través de su ADN?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Huellas dactilares<br>
+                            <input type="radio" name="respuesta" value="b"> b) Análisis de escritura<br>
+                            <input type="radio" name="respuesta" value="c"> c) Muestra de sangre<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta4()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton5" type="button" class="btn btn-warning" onclick="mostrarPregunta5()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Medio
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta5" style="display: none;">
+                            <p>¿Qué tipo de evidencia forense se refiere a objetos o materiales que han estado en
+                                contacto directo con una persona o un objeto en cuestión y pueden proporcionar
+                                información valiosa en una investigación?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Evidencia circunstancial<br>
+                            <input type="radio" name="respuesta" value="b"> b) Evidencia indirecta<br>
+                            <input type="radio" name="respuesta" value="c"> c) Evidencia física<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta5()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton6" type="button" class="btn btn-danger" onclick="mostrarPregunta6()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Díficil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta6" style="display: none;">
+                            <p>¿En qué rama de la criminalística se utiliza el estudio de insectos y artrópodos para
+                                estimar el tiempo de muerte o la ubicación de un cuerpo?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Odontología forense<br>
+                            <input type="radio" name="respuesta" value="b"> b) Entomología forense<br>
+                            <input type="radio" name="respuesta" value="c"> c) Cadena de custodia
+                            exposición<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta6()">Responder</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sospechoso">
+                        <h3>TURISTA</h3>
+                    </div><br>
+                    <div class="imagen">
+                        <img src="img/turista.png" class="img-fluid" alt="TURISTA">
+                    </div><br>
+                    <div class="interrogar">
+                        <h4>INTERROGAR</h4><br>
+
+                        <button id="boton7" type="button" class="btn btn-success" onclick="mostrarPregunta7()">
+                            <span class="fas fa-star"></span> Fácil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta7" style="display: none;">
+                            <p> ¿Cuál es el plato nacional de Japón, consistente en arroz sazonado con vinagre,
+                                acompañado de pescado, mariscos, vegetales y otros ingredientes?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Sushi<br>
+                            <input type="radio" name="respuesta" value="b"> b) Paella<br>
+                            <input type="radio" name="respuesta" value="c"> c) Curry<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta7()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton8" type="button" class="btn btn-warning" onclick="mostrarPregunta8()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Medio
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta8" style="display: none;">
+                            <p>¿Qué país es conocido por ser la cuna del tango, un género musical y baile característico
+                                de su cultura?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Colombia<br>
+                            <input type="radio" name="respuesta" value="b"> b) Argentina<br>
+                            <input type="radio" name="respuesta" value="c"> c) España<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta8()">Responder</button>
+                            <br><br>
+                        </div>
+
+                        <button id="boton9" type="button" class="btn btn-danger" onclick="mostrarPregunta9()">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span> Díficil
+                        </button>
+                        <br><br>
+
+                        <div id="pregunta9" style="display: none;">
+                            <p>¿Quién es el autor de la novela rusa "Crimen y Castigo”, ¿que narra la historia de un
+                                estudiante llamado Raskólnikov que comete un asesinato?</p>
+                            <input type="radio" name="respuesta" value="a"> a) Fyodor Dostoevsky<br>
+                            <input type="radio" name="respuesta" value="b"> b) Leo Tolstoy<br>
+                            <input type="radio" name="respuesta" value="c"> c) Anton Chekhov<br><br>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="verificarRespuesta9()">Responder</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" id="ganador" style="display: none;">
+            <p>ganaste</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

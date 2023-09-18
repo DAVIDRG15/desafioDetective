@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(to bottom, #bebebe, #ffffff);
+    background-repeat: no-repeat;
+}
+
+.interrogar {
+    background-color: #89a7db;
+    border: 1px solid black;
+}
+
+.sospechoso {
+    background-color: #febd59;
+    border: 1px solid black;
+}
+
+.imagen img {
+    width: 192px;
+}
+
+.detective img {
+    width: 216px;
+}
+
+footer,
+nav {
+    background-color: #febd59;
+}
+
+.titulo {
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    -webkit-text-stroke: 1px black;
+}
+
+button.btn-dark {
+    font-size: 24px;
+}
+
+.situacion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #bebebe, #ffffff);
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 13.5px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    background-color: #cc0000;
+}
+
+.situacionCol {
+    background-color: #89a7db;
+    padding: 15px 15px 15px 15px;
+}
+
+.situacionSospechoso {
+    background-color: #febd59
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .situacion {
+        width: 90%;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .situacionCol h5{
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+
+    .col-md-2{
+        margin-bottom: -25px;
+    }
+
+    .cerrar {
+        top: 2px;
+        right: 2px;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .situacionSospechoso {
+        font-size: 10px;
+    }
+
+    img{
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        display: block;
+    }
+}
