@@ -189,7 +189,7 @@ function verificarRespuesta9() {
             document.getElementById('pregunta9').style.display = 'none';
             setTimeout(function() {
                 verificarGanador();
-            }, 2000)
+            }, 1000)
         } else {
             alert("¡Incorrecto!");
             document.getElementById('pregunta9').style.display = 'none';
@@ -228,6 +228,7 @@ function verificarGanador() {
             alert("Después de una exhaustiva investigación, se descubrió que el arma del crimen era un cuchillo de cocina del hotel que había sido lavado cuidadosamente para eliminar cualquier rastro de ADN. ");
             alert("Finalmente, las pruebas forenses y los testimonios de otros huéspedes llevaron a la conclusión de que la guardia de seguridad, María Torres, había cometido el crimen. María había estado involucrada en una relación con Alejandro, pero había sentido celos y resentimiento debido a que Alejandro había empezado a salir con Sarah. María había utilizado su conocimiento de las rutinas del hotel y su acceso a las llaves de las habitaciones para cometer el asesinato.");
             alert("Con las pruebas en su contra, María Torres fue arrestado y condenado por el asesinato de Alejandro. El misterio detrás del crimen en Playa Serena finalmente se resolvió, dejando atrás una historia de pasiones torcidas y traición en un lugar aparentemente tranquilo.");
+            window.location.href = './index.html';
         } else {
             alert("Respuesta incorrecta. Inténtalo de nuevo.");
         }
