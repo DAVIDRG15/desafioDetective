@@ -93,8 +93,16 @@ button.btn-dark {
         font-size: 10px;
     }
 
+    .situacion p {
+        font-size: 8px;
+    }
+
+    .situacion li {
+        font-size: 8px;
+    }
+
     .col-md-2 {
-        margin-bottom: -25px;
+        margin-bottom: -30px;
     }
 
     .cerrar {
