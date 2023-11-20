@@ -1,7 +1,5 @@
 # desafioDetective
 
-# Desafío Detective
-
 ¡Bienvenido al Desafío Detective!
 
 ## Descripción
